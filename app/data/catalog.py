@@ -1,0 +1,28 @@
+from app.schemas.ads import Campaign
+
+CAMPAIGNS = [
+    Campaign(campaign_id="cmp-travel-01", ad_id="ad-travel-01", advertiser_id="hotelco",
+             category="travel", pricing_model="CPC", bid=1.80, daily_budget=500,
+             countries=["FR", "US"], devices=["mobile", "desktop"],
+             placements=["homepage-banner", "article-inline"],
+             creatives=[{"creative_id":"cr-travel-a","format":"image","width":300,"height":250},
+                        {"creative_id":"cr-travel-b","format":"native","width":600,"height":400}],
+             base_ctr=0.045, base_cvr=0.08),
+    Campaign(campaign_id="cmp-finance-02", ad_id="ad-finance-02", advertiser_id="finapp",
+             category="finance", pricing_model="CPA", bid=24.0, daily_budget=800,
+             countries=["FR"], devices=["mobile"], placements=["homepage-banner"],
+             creatives=[{"creative_id":"cr-fin-a","format":"image","width":300,"height":250}],
+             base_ctr=0.028, base_cvr=0.12),
+    Campaign(campaign_id="cmp-retail-03", ad_id="ad-retail-03", advertiser_id="shop",
+             category="retail", pricing_model="CPM", bid=7.5, daily_budget=300,
+             countries=["FR", "US"], devices=["mobile", "desktop"],
+             placements=["homepage-banner", "article-inline"],
+             creatives=[{"creative_id":"cr-retail-a","format":"image","width":300,"height":250},
+                        {"creative_id":"cr-retail-b","format":"video","width":640,"height":360}],
+             base_ctr=0.035, base_cvr=0.03),
+    Campaign(campaign_id="cmp-travel-04", ad_id="ad-travel-04", advertiser_id="airline",
+             category="travel", pricing_model="CPA", bid=35.0, daily_budget=450,
+             countries=["FR"], devices=["mobile", "desktop"], placements=["homepage-banner"],
+             creatives=[{"creative_id":"cr-air-a","format":"native","width":600,"height":400}],
+             base_ctr=0.04, base_cvr=0.07),
+]

@@ -1,0 +1,10 @@
+{
+  "request_id": "req-demo-001",
+  "user_id": "user-42",
+  "publisher_id": "publisher-news",
+  "placement": "homepage-banner",
+  "country": "FR",
+  "device": "mobile",
+  "page_category": "travel",
+  "consented_personalization": false
+}
